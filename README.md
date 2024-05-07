@@ -23,6 +23,10 @@
 Initiate a Django project with the Django admin command: 
 > poetry run django-admin startproject my_project .
 
+Command syntax:
+
+django-admin startproject project_name directory_name
+
 -  Return to the terminal and start the Django server with the following command:
 > poetry run python3 manage.py runserver
 

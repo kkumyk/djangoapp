@@ -6,7 +6,7 @@
 - Django uses templates:
     - presentation layer that defines how info is displayed to the end user;
     - visually represents the data model;
-
+- Django is a Model View Template framework;
 
 ## Project & apps
 - Project & apps work as containers for our Django code.
@@ -42,3 +42,25 @@ Important files in our apps folder:
 3. If the entered URL does not match anything in the urls.py files, then Django returns an error.
 4. If it does match, then Django passes control to the view specified in the URL. In our case, the view is called index.
 5. The view returns either a HttpResponse or a template.
+
+- Views contain the code needed to create, read, update and delete database records and to display dynamic content to the user. They are a fundamental part of Django.
+
+The view is the code that:
+1. Creates, reads, updates or deletes data -CRUD - using the models.
+2. Renders the template for the user.
+
+![django mvt flow](./doc/django_mvt_flow.png)
+
+- A view receives data from the browser through the request object and returns it through a response object.
+
+
+### The request object
+The HTTP request object contains metadata about the request made to the browser. This includes the request method, as noted above. It also includes any form data, the URL that was called, and any files that were uploaded, among other things.
+
+The view can then use the information in the request object to complete a task, such as writing form data to the database.
+
+### The response object
+
+Each view must return a response object to the browser:
+- HttpResponse or 
+- HTML templates, which can contain variables and data.

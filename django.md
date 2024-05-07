@@ -1,0 +1,8 @@
+- web framework - semi-complete application
+- Good development principles: KIS, YANGI, DRY
+- Separation of Concepts (separate UI, datastore access, logic that communicates between UI and datastore)
+- MVC (model, view, controller) separates an application into three interconnected components: Model (data), View (UI), and Controller (logic) by structuring applications to distinctly manage data (Model), user interface (View), and application logic (Controller) for efficient development and maintenance.
+- In Django the MVC view is called the template (MVT).
+- Django uses templates:
+    - presentation layer that defines how info is displayed to the end user;
+    - visually represents the data model;
